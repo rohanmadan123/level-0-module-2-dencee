@@ -9,6 +9,9 @@ public class IntroToRandom {
 	public static void main(String[] args) {
 		
 		int num = 0;
+		System.out.println(num);
+		num = new Random().nextInt(100);
+		
 		
 		//3   Now to make num random. 
 		//3a. Create an object of the Random class, Hint: Random ran = new Random()

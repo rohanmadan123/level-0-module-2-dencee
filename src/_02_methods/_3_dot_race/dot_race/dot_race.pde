@@ -1,6 +1,6 @@
 
 
-int x;
+int x = 50;
 
 void setup() {
     size(800, 200);
@@ -11,10 +11,17 @@ void setup() {
 void draw() {
 
 	background(200,200,200);
- 
+  fill(0,255,255);
+  ellipse(x, 100, 50, 50);
     //2. Draw an ellipse of height and width 50. Make sure to use the x variable for its X position. 
     //   Pick a y value that places it half way down the window.
-      
+  if(mousePressed){
+    x += 10;
+  }
+ 
+  if(x==800){
+    playSound();
+  }
     //3. Make the ellipse a nice color
 
     //4. If the mouse is pressed change the x value so that the dot moves to the right
@@ -28,7 +35,7 @@ void draw() {
 
 }
 
-/*
+
 import ddf.minim.*;
 boolean soundPlayed = false;
 void playSound() {
@@ -39,4 +46,3 @@ void playSound() {
         soundPlayed = true;
     }
 }
-*/
