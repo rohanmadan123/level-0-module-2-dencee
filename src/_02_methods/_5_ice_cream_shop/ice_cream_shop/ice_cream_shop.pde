@@ -5,7 +5,13 @@
 void setup(){
 
      size(500,500);
-     
+     makeIceCreamCone();
+     addScoop("chocolate");
+     addScoop("Strawberry");
+     addScoop("Vanilla");
+     addSprinkle(20);
+     fill(255,0,0);
+     ellipse(250,50,30,30);
      // Call the makeIceCreamCone() method below to make an ice cream cone
 
      // Use the addScoop method below to add as many scoops of ice cream as you want
